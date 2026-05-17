@@ -1,12 +1,12 @@
 name: FirstWorkflow
-on: [push, worflow_dispatch]
-  jobs:
-    first_job:
-      runs-on: ubuntu-latest
-      steps:
-        - name: Greetings
-          run: echo "Hi I am running smoothly"
-        - name: Copying
-          uses: actions/checkout@v6
-        - name: Info
-          run: echo "${{ github }}"
+on: [push, workflow_dispatch]
+jobs:
+  first_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Greetings
+        run: echo "Hi I am running smoothly"
+      - name: Copying
+        uses: actions/checkout@v6
+      - name: Info
+        run: echo "${{ github }}"
