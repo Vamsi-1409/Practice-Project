@@ -9,4 +9,4 @@ jobs:
       - name: Copying
         uses: actions/checkout@v6
       - name: Info
-        run: echo "${{ github }}"
+        run: echo "${{ toJson(github) }}"
